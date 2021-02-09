@@ -66,7 +66,7 @@ const winningCountries = document.querySelectorAll('#fifa-wins li');
 winningCountries.forEach((countryLi) => {
   console.log(countryLi); // countryLi é o próprio elemento li
   console.log(countryLi.innerText); // countryLi.innerText é o texto do li
-  // countryLi.style.color = "purple";
+  // countryLi.style.color = "purple"; // próxima parte da documentação é sobre o style :D
 });
 
 // ==========================================
@@ -100,7 +100,7 @@ starWarsParagraph.style.display = "";
 // Adicionamos a classe minha-nova-classe-css ao parágrafo!
 starWarsParagraph.classList.add("minha-nova-classe-css");
 
-// Removemos a classe minha-nova-classe-css ao parágrafo!
+// Removemos a classe minha-nova-classe-css do parágrafo!
 starWarsParagraph.classList.remove("minha-nova-classe-css");
 
 // As vezes, você quer adicionar a classe SE ela não existe no elemento.
