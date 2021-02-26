@@ -5,7 +5,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.restaurant = @restaurant
     if @review.save
-      redirect_to restaurant_path(@restaurant) # re-executa a ação inteira
+      redirect_to restaurant_path(@restaurant, anchor: "review-#{@review.id}") # re-executa a ação inteira
     else
       render 'restaurants/show' # renderiza sem executar a ação
     end
